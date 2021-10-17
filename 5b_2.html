@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maximum and minimum element in an array</title>
+</head>
+<body>
+    <header>
+        <section>
+            <p>
+                <h2>
+                    Code in any c++ language that can find an maximum and minimum element in an array.
+                </h2>
+            </p>
+            
+        </section>       
+    </header>
+
+    <main>
+        <p><b>Sample code</b></p>
+        <pre>
+            <code>
+    #include<iostream>
+    using namespace std;
+        
+    int main(){
+        
+            int arr[5]={1,2,3,4,5};
+            int max=0,min=0;
+        
+            for (int i = 1; i < 5; i++)
+            {
+                
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+         
+                
+                else if (arr[i] < min) {
+                    min = arr[i];
+                }
+            }
+            cout<<"Maximum:"<<max<<endl;
+            cout<<"Minimum:"<<min<<endl;
+            return 0;
+    }      
+            </code>
+        </pre>
+        <p><b>Sample output</b></p>
+        <samp>
+            <pre>
+    Maximum:5
+    Minimum:0
+            </pre>
+        </samp>
+    <section>
+        <p>
+            <B>Variables used in program-</B>
+            <br>
+            In the above code total 3 variables used. 
+            <br>
+            <var>max</var> stores the maximum element of an array. 
+            <br>
+            <var>min</var> stores the maximum element of an array.
+            <br> 
+            <var>i</var> is used for iteration over the array. 
+            <br>
+            
+        </p>
+        <p><B>Time Complexity-</B></p>
+        <p>Since we have iterated to the array once so time complexity of above code is O(n)</p>
+    </section>
+    <hr>
+    <p>
+        <a href="https://www.techiedelight.com/find-minimum-maximum-element-array-using-minimum-comparisons/">Visit us</a>
+    </p>
+    
+    </main>
+    
+</body>
+</html>
